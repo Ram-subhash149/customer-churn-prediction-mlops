@@ -1,0 +1,37 @@
+{
+    "dataset_name": "Kaggle Medical Appointment No-Shows",
+    "student_registration": "241FA18343",
+    "raw_record_count": 110527,
+    "cleaned_record_count": 110521,
+    "train_shape": [
+        88416,
+        15
+    ],
+    "test_shape": [
+        22105,
+        15
+    ],
+    "feature_names": [
+        "Gender",
+        "Age",
+        "Scholarship",
+        "Hypertension",
+        "Diabetes",
+        "Alcoholism",
+        "Handicap",
+        "SMS_received",
+        "WaitingDays",
+        "ScheduledWeekday",
+        "AppointmentWeekday",
+        "ScheduledHour",
+        "PriorAppointments",
+        "PriorNoShows",
+        "PriorNoShowRate"
+    ],
+    "target_name": "Target (1=No-show, 0=Show)",
+    "train_class_distribution": {
+        "show_0": 70565,
+        "no_show_1": 17851
+    },
+    "scale_pos_weight": 3.953
+}

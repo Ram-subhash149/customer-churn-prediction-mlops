@@ -1,0 +1,34 @@
+# Configuration for Medical Appointment No-Show Prediction Pipeline
+# Student Registration: 241FA18343
+
+project:
+  name: "Medical Appointment No-Show Prediction"
+  registration_number: "241FA18343"
+  dataset_path: "data/raw/KaggleV2-May-2016.csv"
+  target_column: "Target"
+  random_state: 42
+  test_size: 0.2
+
+features:
+  predictive:
+    - "Gender"
+    - "Age"
+    - "Scholarship"
+    - "Hypertension"
+    - "Diabetes"
+    - "Alcoholism"
+    - "Handicap"
+    - "SMS_received"
+    - "WaitingDays"
+    - "ScheduledWeekday"
+    - "AppointmentWeekday"
+    - "ScheduledHour"
+    - "PriorAppointments"
+    - "PriorNoShows"
+    - "PriorNoShowRate"
+
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "Medical_Appointment_No_Show_Prediction"
+  registered_model_name: "No_Show_Production_Model"
+  metric_to_optimize: "roc_auc"

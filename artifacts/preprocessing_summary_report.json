@@ -1,0 +1,36 @@
+{
+    "project": "Medical Appointment No-Show Prediction",
+    "student_registration": "241FA18343",
+    "validation_status": "PASSED",
+    "matrix_dimensions": {
+        "X_train_shape": [
+            88416,
+            15
+        ],
+        "X_test_shape": [
+            22105,
+            15
+        ],
+        "y_train_shape": [
+            88416
+        ],
+        "y_test_shape": [
+            22105
+        ]
+    },
+    "target_balance": {
+        "train_show_0": 70565,
+        "train_no_show_1": 17851,
+        "train_no_show_rate_percent": 20.19,
+        "test_show_0": 17642,
+        "test_no_show_1": 4463,
+        "test_no_show_rate_percent": 20.19
+    },
+    "data_quality": {
+        "missing_values_X_train": 0,
+        "missing_values_X_test": 0,
+        "missing_values_y_train": 0,
+        "missing_values_y_test": 0
+    },
+    "errors": []
+}

@@ -1,0 +1,10 @@
+services:
+  no-show-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: no-show-prediction-api:1.0
+    container_name: no-show-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

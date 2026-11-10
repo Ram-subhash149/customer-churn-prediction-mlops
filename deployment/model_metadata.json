@@ -1,0 +1,34 @@
+{
+  "project": "Medical Appointment No-Show Prediction",
+  "registration_number": "241FA18343",
+  "model_file": "models/best_xgboost_model.pkl",
+  "model_family": "XGBoost (Tuned)",
+  "target": {
+    "name": "Target",
+    "positive_class": 1,
+    "positive_label": "No-show",
+    "negative_class": 0,
+    "negative_label": "Show"
+  },
+  "feature_order": [
+    "Gender",
+    "Age",
+    "Scholarship",
+    "Hypertension",
+    "Diabetes",
+    "Alcoholism",
+    "Handicap",
+    "SMS_received",
+    "WaitingDays",
+    "ScheduledWeekday",
+    "AppointmentWeekday",
+    "ScheduledHour",
+    "PriorAppointments",
+    "PriorNoShows",
+    "PriorNoShowRate"
+  ],
+  "default_decision_threshold": 0.5503,
+  "threshold_source": "artifacts/model_metrics.json optimized_threshold_metrics.optimal_threshold",
+  "api": "FastAPI",
+  "api_docs": "/docs"
+}
